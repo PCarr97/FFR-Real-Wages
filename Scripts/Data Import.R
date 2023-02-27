@@ -1,7 +1,3 @@
-install.packages('pacman')
-library(pacman)
-p_load(tidyverse, janitor, lubridate, sqldf, scales, ggplot)
-
 # Import Federal Funds Rate Data
 ffr <- read_csv("Raw Data/FEDFUNDS.csv",
                 col_names = c("date", "fed_rate"), skip = 1)
