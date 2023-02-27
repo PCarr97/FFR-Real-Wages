@@ -8,3 +8,4 @@ acf(residuals(dynamic_model))
 summary(ur.df(data$wages, type = "drift", lags = 0))
 
 # KPSS Test
+kpss.test(data$wages, null = "Trend")
