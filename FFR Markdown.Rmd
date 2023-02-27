@@ -3,7 +3,7 @@ title: "FFR Markdown"
 author: "Patrick Carr"
 date: "2023-02-27"
 output:
-  md_document
+  html_document
 ---
 
 ```{r setup, include=FALSE}
