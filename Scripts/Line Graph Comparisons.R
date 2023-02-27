@@ -3,7 +3,7 @@
 wage_plot <- data |> ggplot() +
   geom_line(aes(x = date, y = wages), size = 1.5, color = "#3d82b5") +
   ylab("Wages") +
-  ggtitle("Wage Title") +
+  ggtitle("Wage and Fed Rate Trends") +
   theme(panel.background = element_rect(fill = 'white', color = 'black'),
         panel.grid.major = element_line(color = '#818a92', linetype = 'dotted'),
         panel.grid.minor = element_line(color = '#818a92', linetype = 'dotted'),
