@@ -47,7 +47,7 @@ I’ll be using time series panel datasets to test this hypothesis; the data con
 First, I’ll visualize the data. This scatterplot compares the two datasets:
 
 
-```{r, echo = FALSE, message = FALSE, warning = FALSE, error = FALSE, dpi = 300}
+```{r, echo = FALSE, message = FALSE, warning = FALSE, error = FALSE, dpi = 600}
 data |> 
   ggplot() +
   geom_point(aes(x = fed_rate, y = wages), size = 2.5, color = "#1d65a0") +
@@ -67,7 +67,7 @@ data |>
 
 We can see just from this that higher wages tend to cluster around a lower FFR. A line graph depicting these trends over time suggests the same, with a declining FFR depicted in red above, and increasing wages depicted in blue below:
 
-```{r, echo = FALSE, message = FALSE, warning = FALSE, error = FALSE, dpi = 300}
+```{r, echo = FALSE, message = FALSE, warning = FALSE, error = FALSE, dpi = 600}
 wage_plot <- data |> ggplot() +
   geom_line(aes(x = date, y = wages), size = 1.5, color = "#3d82b5") +
   ylab("Wages") +

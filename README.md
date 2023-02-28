@@ -8,7 +8,7 @@ piece examined this trend in both the 1990’s and 2000’s, I’m only going
 to analyze data for the latter period (in part for simplicity’s sake,
 and in part because the 1990’s data presents a more multifaceted picture
 that I believe would require some more advanced analytics to
-understand).
+understand). 
 
 As I noted in the linked piece, [UNC Economics professor Karl Smith
 argues](https://www.bloomberg.com/opinion/articles/2019-05-02/u-s-worker-productivity-is-up-and-the-fed-should-pay-attention)
