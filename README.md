@@ -1,29 +1,34 @@
 ## R Markdown
 
-As I addressed in this piece of short writing, economists have noted a
-relationship between a low Federal Funds Rate (FFR) and high average
-worker earnings in the United States. While the piece examined this
-trend in both the 1990’s and 2000’s, I’m only going to analyze data for
-the latter (in part for simplicity’s sake, and in part because the
-1990’s data presents a more multifaceted picture that I believe would
-require some more advanced analytics to understand).
+As I addressed in [this piece of short
+writing](https://www.blogger.com/blog/post/edit/7082565423545917807/6331764398954459332),
+economists have noted a relationship between a low Federal Funds Rate
+(FFR) and high average worker earnings in the United States. While the
+piece examined this trend in both the 1990’s and 2000’s, I’m only going
+to analyze data for the latter period (in part for simplicity’s sake,
+and in part because the 1990’s data presents a more multifaceted picture
+that I believe would require some more advanced analytics to
+understand).
 
-As I previously noted, the argument posited by UNC Economics professor
-Karl Smith is that a Federal Funds Rate that drops below the NAIRU, in
-this case 5%, is correlated with an increase in wages. Naturally there
-are numerous different factors that impact wage growth, but for now,
-I’ll just analyze the relationship between these two variables.
+As I noted in the linked piece, [UNC Economics professor Karl Smith
+argues](https://www.bloomberg.com/opinion/articles/2019-05-02/u-s-worker-productivity-is-up-and-the-fed-should-pay-attention)
+that a Federal Funds Rate that drops below the NAIRU, in this case 5%,
+is correlated with an increase in real wages. Naturally there are
+numerous different factors that impact wage growth, but for this
+analysis, I’ll just be exploring the relationship between these two
+variables.
 
-I’ll be using time series panel data to test this hypothesis; the data
-consists of quarterly values of the FFR and wage data from the Bureau of
-Labor Statistics that tracks the median usual weekly real earnings for
-full-time wage and salary workers over the wage of 16. While we’re
+I’ll be using time series panel datasets to test this hypothesis; the
+data consists of [the value of the Federal Funds rate, reported
+quarterly](https://fred.stlouisfed.org/series/FEDFUNDS), and [the median
+usual weekly earnings of workers over the age of sixteen, reported
+monthly](https://fred.stlouisfed.org/series/LES1252881600Q). While we’re
 primarily examining the trend post-2008, I’ve included data from 1981 to
 2020 to gain a better understanding of the long-term relationship
 between these two variables.
 
-First, I’ll visualize the data. I’ll create a scatterplot the effective
-Federal Funds Rate against my wage data:
+First, I’ll visualize the data. This scatterplot compares the two
+datasets:
 
 ![](FFR-Markdown_files/figure-markdown_strict/unnamed-chunk-3-1.png)
 
@@ -109,8 +114,9 @@ between the FFR and wages:
     ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
 The low p-values observed in this regression imply that a 0.01 increase
-in the FFR corresponds to a 2.56 decrease in the wage index. However,
-keep in mind that this is looking at all data from 1981 to 2020.
+in the federal funds rate corresponds to a $2.51 *decrease* in real
+weekly wages. However, keep in mind that this is looking at all data
+from 1979 to 2022.
 
 Given the non-stationarity of the data, if Professor Smith’s argument is
 correct, we should see a break in the FFR coefficient for data observed
@@ -125,3 +131,8 @@ this occurred in the third quarter of 2007:
     ## fed_rate      0.53993    1.73780   0.3107   0.7571    
     ## ---
     ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+We see that, for data post-2008, the trend is reversed. A 0.01
+percentage-point increase in the federal funds rate corresponds to a
+$0.54 *increase* in real weekly wages. However, with a p-value of
+0.7571, these findiungs are not statistically significant.
