@@ -135,4 +135,4 @@ this occurred in the third quarter of 2007:
 We see that, for data post-2008, the trend is reversed. A 0.01
 percentage-point increase in the federal funds rate corresponds to a
 $0.54 *increase* in real weekly wages. However, with a p-value of
-0.7571, these findiungs are not statistically significant. 
+0.7571, these findiungs are not statistically significant.

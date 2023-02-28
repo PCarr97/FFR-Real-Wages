@@ -4,6 +4,7 @@ wage_plot <- data |> ggplot() +
   geom_line(aes(x = date, y = wages), size = 1.5, color = "#3d82b5") +
   ylab("Wages") +
   ggtitle("Wage and Fed Rate Trends") +
+  scale_y_continuous(labels = scales::dollar_format(prefix="$")) +
   theme(panel.background = element_rect(fill = 'white', color = 'black'),
         panel.grid.major = element_line(color = '#818a92', linetype = 'dotted'),
         panel.grid.minor = element_line(color = '#818a92', linetype = 'dotted'),
@@ -18,6 +19,7 @@ rate_plot <- data |> ggplot() +
   geom_line(aes(x = date, y = fed_rate), size = 1.5, color = "#9a4c4a") +
   xlab("Date") +
   ylab("Rate") +
+  scale_y_continuous(labels = scales::percent_format(accuracy = 1)) +
   theme(panel.background = element_rect(fill = 'white', color = 'black'),
         panel.grid.major = element_line(color = '#818a92', linetype = 'dotted'),
         panel.grid.minor = element_line(color = '#818a92', linetype = 'dotted'),

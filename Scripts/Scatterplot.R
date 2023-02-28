@@ -4,6 +4,7 @@ data |>
   ggplot() +
   geom_point(aes(x = fed_rate, y = wages), size = 2.5, color = "#1d65a0") +
   scale_x_continuous(labels = scales::percent_format(accuracy = 1)) +
+  scale_y_continuous(labels = scales::dollar_format(prefix="$")) +
   xlab("Rate") + 
   ylab("Wages") +
   ggtitle("Wages vs. Federal Funds Rate") +
