@@ -30,14 +30,14 @@ between these two variables.
 First, I’ll visualize the data. This scatterplot compares the two
 datasets:
 
-![](FFR-Markdown_files/figure-markdown_strict/unnamed-chunk-3-1.png)
+<img src="FFR-Markdown_files/figure-markdown_strict/unnamed-chunk-3-1.png" width="75%" />
 
 We can see just from this that higher wages tend to cluster around a
 lower FFR. A line graph depicting these trends over time suggests the
 same, with a declining FFR depicted in red above, and increasing wages
 depicted in blue below:
 
-![](FFR-Markdown_files/figure-markdown_strict/unnamed-chunk-4-1.png)
+<img src="FFR-Markdown_files/figure-markdown_strict/unnamed-chunk-4-1.png" width="75%" />
 
 However, we’re not simply testing whether a lower federal funds rate
 correlates with lower wages, but rather, whether the federal funds rate
